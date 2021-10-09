@@ -1,0 +1,440 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: 0px;
+}
+
+
+
+
+
+body{
+  
+    font-family: 'Sriracha', cursive;
+    /* background-color: rgb(9, 2, 44); */
+   /* background-size: 213vh 100vh; */
+   background-image: url(./assest/Screenshot\ \(496\).png);
+   
+}
+
+.navbar{
+    position:sticky;
+    width: 103%;
+}
+
+.carousel{
+    height: 46%;
+    width: 85%;
+    align-content: center;
+    margin-left: 8%;
+    background-color: #0e0e0e;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    from {background-color:#896cac ;}
+    to {background-color: rgb(255, 238, 0);}
+  }
+
+
+
+
+
+
+.text{
+    
+    display: flex;
+    flex-direction: row;
+    margin-right: 98px;
+}
+
+
+
+.card-header{
+    background-color: rgb(255, 238, 0);
+}
+.card-footer    {
+    display: inline-block;
+    background-color: rgb(255, 238, 0);
+    /* height: 8%;*/
+    width: 90%; 
+    margin-left: 17px;
+    background-size: cover;
+}
+
+#delButton{
+    margin-left: 9rem;
+}
+
+#ProfyNAME{
+    display: inline-block;
+    background-color: #ffee00;
+}
+#Profyage{
+    display: inline-block;
+    background-color: #ffee00;
+}
+#ProfyRole{
+    display: inline-block;
+    background-color: #ffee00;
+}
+#Profygender{
+    display: inline-block;
+    background-color: #ffee00;
+}
+#newp1{
+    display: block;
+    margin-left: 102px;
+
+}
+
+
+.card{
+    margin-top: 3rem;
+    margin-left: 17px;  
+}
+
+/* .Text{
+    display: inline-block;
+    background-color: #000;
+    border-radius: 2rem;
+    color: #ccc;
+    font-size: 3rem;
+} */
+
+h1{
+    display: inline-block;
+}
+
+
+
+
+.card1{
+    margin-left: -30px;
+    position: relative;
+    margin-top: 2rem;
+}
+.movie_title{
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+#desc{
+    background-color: rgb(37, 110, 219);
+    border-radius: 4px;
+}
+
+
+
+
+
+#vp1{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.card-body{
+    margin-left: 2rem;
+}
+
+.Text{
+    margin-top: 2rem;
+    margin-left: 26px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #0a0a0a 63%, #ffee00 51%);
+    border-radius: 2rem;
+    color: white;
+    font-size: 25px;
+}
+
+.Text1{
+    display: inline-block;
+    font-size: 3rem;
+  color: #ffee00;
+  margin-left: 2rem;
+  margin-bottom: -2rem;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.Footer{
+    height: 3rem;
+    width: 103%;
+    background-color: #ffee00;
+    animation: myman 5s infinite;
+}
+
+@keyframes myman{
+    from {background-color: rgb(146, 5, 228)}
+    to {background-color:#ffee00}
+
+}
+
+
+.card-text{
+    display: inline-block;
+}
+
+
+
+
+@media(min-width:1024px){
+    .card-text{
+        display: inline-block;
+    }
+
+    .card-body{
+        margin-left: 0;
+    }
+   .navbar{
+       position:sticky;
+       width: 100%;
+   }
+
+   body{
+    background-image: url(./assest/Screenshot\ \(496\).png);
+    background-size: cover;
+    background-attachment: fixed;
+   
+} 
+.navbar{
+
+    width: 100%;
+}
+
+
+
+
+.card-title{
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Text{
+    display: inline-block;
+    background-color: #000;
+    border-radius: 2rem;
+    color: #ccc;
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+#vp1{
+    margin-top: 1rem;
+}
+
+
+
+.text{
+    
+    display: flex;
+    flex-direction: row;
+    margin-right: 114px;
+    font-size: 25px;
+}
+
+
+#desc{
+    background-color: rgb(37, 110, 219);
+    border-radius: 4px;
+}
+#newp1 {
+    align-content: center;
+    display: inline-block;
+    margin-left: 42rem;
+    height: 3rem;
+    width: 11rem;
+    font-size: 22px;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.Footer{
+    height: 3rem;
+    background-color: #ffee00;
+    animation: myman 5s infinite;
+}
+
+@keyframes myman{
+    from {background-color: rgb(146, 5, 228)}
+    to {background-color:#ffee00}
+
+}
+
+
+body{
+  
+    font-family: 'Sriracha', cursive;
+    /* background-color: rgb(9, 2, 44); */
+   /* background-size: 213vh 100vh; */
+   background-image: url(./assest/Screenshot\ \(496\).png);
+   
+}
+
+.carousel{
+    height: 45%;
+    width: 53%;
+    align-content: center;
+    margin-left: 25%;
+    background-color: #0e0e0e;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    from {background-color:#896cac ;}
+    to {background-color: rgb(255, 238, 0);}
+  }
+
+.main_img{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+
+
+.text{
+    
+    display: flex;
+    flex-direction: row;
+    margin-right: 98px;
+}
+
+
+.btn{
+    margin-left: 0rem;
+}
+.card-header{
+    background-color: rgb(255, 238, 0);
+}
+.card-footer    {
+    display: inline-block;
+    background-color: rgb(255, 238, 0);
+    /* height: 8%; */
+    width: 90%;
+    margin-left: 32px;
+}
+
+#delButton{
+    margin-left: 9rem;
+}
+
+#ProfyNAME{
+    display: inline-block;
+    background-color: #ffee00;
+}
+#Profyage{
+    display: inline-block;
+    background-color: #ffee00;
+}
+#ProfyRole{
+    display: inline-block;
+    background-color: #ffee00;
+}
+#Profygender{
+    display: inline-block;
+    background-color: #ffee00;
+}
+#newp1{
+    display: block;
+}
+
+
+.card{
+    margin-top: 3rem;
+    margin-left: 2rem;  
+}
+
+.Text{
+    display: inline-block;
+    background-color: #000;
+    border-radius: 2rem;
+    color: #ccc;
+    font-size: 3rem;
+}
+
+h1{
+    display: inline-block;
+}
+
+
+
+
+.card1{
+    margin-left: -30px;
+    position: relative;
+    margin-top: 2rem;
+}
+.movie_title{
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+#desc{
+    background-color: rgb(37, 110, 219);
+    border-radius: 4px;
+}
+
+
+
+
+
+#vp1{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.card-body{
+    margin-left: 2rem;
+}
+
+.Text{
+    margin-top: 2rem;
+    margin-left: 24rem;
+    display: inline-block;
+    background-image: linear-gradient(to right,
+    #0a0a0a 63%,
+    #ffee00 51%);
+    border-radius: 2rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.Text1{
+    display: inline-block;
+    font-size: 3rem;
+  color: #ffee00;
+  margin-left: 3rem;
+  margin-bottom: -2rem;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+}
+
+}
