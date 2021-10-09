@@ -53,14 +53,17 @@ const generateTaskCard = ({
             
             
             
-            ${
-              Image_URL &&
-            `<img  style="padding:10px" src="${Image_URL}" alt="Card image cap" class="card-img-top mb-3 rounded-lg>`
-            }
             
 
             <div class="card-body">
-                <p class="card-text" id="ProfyNAME">Name Is-${Name}</p>
+            
+            ${
+              Image_URL &&
+            `<img   src=${Image_URL} alt="Card image cap" class="card-img-top mb-3 rounded-lg>`
+    }  
+            
+                 <p class="card-text" id="ProfyNAME">Name Is-${Name}</p> 
+                 
                 <p class="card-text" id="Profyage">Age-${age}</p>
                 <br>
                  <p class="card-text" id="ProfyRole">${Movie_Role}</p>
@@ -114,7 +117,7 @@ const EditTask = (e) => {
   // const targetID=e.target.id;
   // const type = e.target.tagName;
   console.log(e);
-  let tasktitle;
+  // let tasktitle;
   let taskage;
   let taskrole;
   let taskgender;
@@ -126,26 +129,27 @@ const EditTask = (e) => {
   // e.childNodes[1].classList.add("fa-check");
   ParentNode = e.parentNode.parentNode;
   console.log(ParentNode);
-  console.log(ParentNode.childNodes[5].childNodes[1]);
+  // console.log(ParentNode.childNodes[5].childNodes[1]);
   //  console.log(ParentNode.childNodes[7].childNodes[1]);
   // console.log(ParentNode.childNodes[7].childNodes[3]);
   // console.log(ParentNode.childNodes[7].childNodes[5]);
   // console.log(ParentNode.childNodes[7].childNodes[7]);
   // console.log(ParentNode.childNodes[7].childNodes[9]);
   // console.log(ParentNode.childNodes[9].childNodes[3].childNodes[1]);
-  tasktitle =ParentNode.childNodes[5].childNodes[1];
-  console.log(tasktitle);
-  taskage = ParentNode.childNodes[5].childNodes[3];
-  taskrole = ParentNode.childNodes[5].childNodes[7];
-  taskgender = ParentNode.childNodes[5].childNodes[11];
+  // tasktitle =ParentNode.childNodes[3].childNodes;
+  // console.log(tasktitle);
+  taskage = ParentNode.childNodes[3].childNodes[5];
+  console.log(taskage)
+  taskrole = ParentNode.childNodes[3].childNodes[9];
+  taskgender = ParentNode.childNodes[3].childNodes[13];
   
-  submitButton = ParentNode.childNodes[7].childNodes[1].childNodes[1];
+  submitButton = ParentNode.childNodes[5].childNodes[1].childNodes[1];
   console.log(submitButton);
 
   //  submitButton.setAttribute("onclick", "saveEdit.apply(this, arguments)");
   //  submitButton.removeAttribute("data-bs-toggle");
 
-  tasktitle.setAttribute("contenteditable", "true");
+  // tasktitle.setAttribute("contenteditable", "true");
   taskage.setAttribute("contenteditable", "true");
   taskrole.setAttribute("contenteditable", "true");
   taskgender.setAttribute("contenteditable", "true");
@@ -161,7 +165,7 @@ const saveEditTask = (e) => {
   console.log(targetID);
   const ElementType = e.tagName;
 
-  let tasktitle;
+  // let tasktitle;
   let taskage;
   let taskrole;
   let taskgender;
@@ -173,16 +177,17 @@ const saveEditTask = (e) => {
   console.log(ParentNode);
   //  console.log(ParentNode.childNodes[7].childNodes[1] );
 
-  tasktitle = ParentNode.childNodes[5].childNodes[1];
-  console.log(tasktitle);
-  taskage = ParentNode.childNodes[5].childNodes[3];
-  taskrole = ParentNode.childNodes[5].childNodes[7];
-  taskgender = ParentNode.childNodes[5].childNodes[11];
+  // tasktitle = ParentNode.childNodes[5].childNodes[1];
+  // console.log(tasktitle);
+  taskage = ParentNode.childNodes[3].childNodes[5];
+  console.log(taskage);
+  taskrole = ParentNode.childNodes[3].childNodes[9];
+  taskgender = ParentNode.childNodes[3].childNodes[13];
   
-  submitButton = ParentNode.childNodes[7].childNodes[1].childNodes[1];
+  submitButton = ParentNode.childNodes[5].childNodes[1].childNodes[1];
   console.log(submitButton);
   const updateData = {
-    tasktitle: tasktitle.innerHTML,
+    
     taskage: taskage.innerHTML,
     taskrole: taskrole.innerHTML,
     taskgender: taskgender.innerHTML,
@@ -195,7 +200,7 @@ const saveEditTask = (e) => {
     task.id === targetID
       ? {
           id: task.id,
-          Name: updateData.tasktitle,
+          
           age: updateData.taskage,
           Movie_Role: updateData.taskrole,
           Gender: updateData.taskgender,
@@ -216,7 +221,7 @@ const saveEditTask = (e) => {
   // globalTaskData=updateprofyData;
   console.log(globalTaskData);
   SaveToLocalStorage();
-  tasktitle.setAttribute("contenteditable", "false");
+  
   taskage.setAttribute("contenteditable", "false");
   taskrole.setAttribute("contenteditable", "false");
   taskgender.setAttribute("contenteditable", "false");
